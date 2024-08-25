@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial"
+        android:layout_below="@id/buttonLogout"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/buttonControlDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de Dispositivos"
+        android:layout_below="@id/buttonHistory"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/textViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonControlDevices"
+        android:padding="16dp"
+        android:text="Historial de Automatización"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/listViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHistory"
+        android:padding="16dp" />
+
+</RelativeLayout>

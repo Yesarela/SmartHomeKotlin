@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HomeAutomationApp</string>
+    <string name="dashboard_title">DashBoard</string>
+    <string name="control_devices_title">ControlCenter</string>
+</resources>
