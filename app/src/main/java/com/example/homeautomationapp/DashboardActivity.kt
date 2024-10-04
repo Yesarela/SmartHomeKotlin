@@ -2,17 +2,23 @@ package com.example.homeautomationapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.ListView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import com.example.homeautomationapp.com.example.homeautomationapp.ControlDevicesActivity
+
 
 class DashboardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
+
+        val username = intent.getStringExtra("username")
+        val welcomeTextView = findViewById<TextView>(R.id.textViewWelcome)
+        welcomeTextView.text = "Hola, $username"
 
         val logoutButton = findViewById<Button>(R.id.buttonLogout)
         val historyButton = findViewById<Button>(R.id.buttonHistory)
@@ -37,7 +43,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         historyButton.setOnClickListener {
-            //
+            //TODO
         }
 
         controlDevicesButton.setOnClickListener {
